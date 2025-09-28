@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Coniugazione Italiana</title>
+
+```
+<!-- PWA Meta Tags -->
+<meta name="theme-color" content="#16a34a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Coniugazione">
+
+<!-- Favicon et icônes -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23dc2626'/><rect x='10' y='60' width='80' height='30' rx='5' fill='%2316a34a'/><text x='50' y='40' text-anchor='middle' font-size='30' fill='white' font-family='Arial'>IT</text></svg>">
+
+<!-- Apple Touch Icons -->
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='36' fill='%23dc2626'/><rect x='18' y='108' width='144' height='54' rx='9' fill='%2316a34a'/><text x='90' y='72' text-anchor='middle' font-size='54' fill='white' font-family='Arial,sans-serif' font-weight='bold'>IT</text></svg>">
+
+<!-- Manifest -->
+<link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkNvbml1Z2F6aW9uZSBJdGFsaWFuYSIsCiAgInNob3J0X25hbWUiOiAiQ29uaXVnYXppb25lIiwKICAiZGVzY3JpcHRpb24iOiAiQXBwbGljYXRpb24gZGUgY29uanVnYWlzb24gaXRhbGllbm5lIGF2ZWMgdHJhZHVjdGlvbiBmcmFuw6dhaXNlIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmOWZhZmIiLAogICJ0aGVtZV9jb2xvciI6ICIjMTZhMzRhIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgMTkyIDE5Mic%2BPHJlY3Qgd2lkdGg9JzE5MicgaGVpZ2h0PScxOTInIHJ4PSczOCcgZmlsbD0nJTIzZGMyNjI2Jy8%2BPHJlY3QgeD0nMTknIHk9JzExNScgd2lkdGg9JzE1NCcgaGVpZ2h0PSc1OCcgcng9JzEwJyBmaWxsPSclMjMxNmEzNGEnLz48dGV4dCB4PSc5NicgeT0nNzYnIHRleHQtYW5jaG9yPSdtaWRkbGUnIGZvbnQtc2l6ZT0nNTgnIGZpbGw9J3doaXRlJyBmb250LWZhbWlseT0nQXJpYWwsc2Fucy1zZXJpZicgZm9udC13ZWlnaHQ9J2JvbGQnPklUPC90ZXh0Pjwvc3ZnPiIsCiAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKIAgICAgInR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIKICAgIH0sCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sLDxzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNTEyIDUxMic%2BPHJlY3Qgd2lkdGg9JzUxMicgaGVpZ2h0PSc1MTInIHJ4PSc5NicgZmlsbD0nJTIzZGMyNjI2Jy8%2BPHJlY3QgeD0nNTEnIHk9JzMwNycgd2lkdGg9JzQxMCcgaGVpZ2h0PSc5OCcgcng9JzI0JyBmaWxsPSclMjMxNmEzNGEnLz48dGV4dCB4PSc2NScgeT0nMjA3JyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBmb250LXNpemU9JzE2NScgZmlsbD0nd2hpdGUnIGZvbnQtZmFtaWx5PSdBcmlhbCxzYW5zLXNlcmlmJyBmb250LXdlaWdodD0nYm9sZCc%2BSVRdPHRzcGFuIHg9JzM1NScgeT0nMjA3Jz5UPC90c3Bhbj48L3RleHQ%2BPC9zdmc%2BIiwKICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfQogIF0KfQ==">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #f9fafb;
+        overflow: hidden;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        height: 100vh;
+    }
+
+    .app-container {
+        width: 100%;
+        height: 100vh;
+        max-width: 428px;
+        margin: 0 auto;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .header {
+        background: linear-gradient(135deg, #16a34a 0%, #dc2626 100%);
+        color: white;
+        padding: 16px;
+        flex-shrink: 0;
+    }
+
+    .header-top {
+        display: flex;
+        justify-content: between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .header-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .search-container {
+        position: relative;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 12px 16px 12px 44px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        background: white;
+        color: #374151;
+    }
+
+    .search-input::placeholder {
+        color: #6b7280;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6b7280;
+    }
+
+    .content {
+        flex: 1;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .verb-item {
+        padding: 16px;
+        border-bottom: 1px solid #f3f4f6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .verb-item:active {
+        background: #f9fafb;
+    }
+
+    .verb-info {
+        flex: 1;
+    }
+
+    .verb-name {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111827;
+        margin-bottom: 4px;
+    }
+
+    .verb-translation {
+        color: #6b7280;
+        margin-bottom: 2px;
+    }
+
+    .verb-group {
+        font-size: 12px;
+        color: #9ca3af;
+    }
+
+    .verb-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .favorite-btn {
+        padding: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #d1d5db;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .favorite-btn.active {
+        color: #fbbf24;
+    }
+
+    .back-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 4px 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .verb-header {
+        text-align: center;
+        padding-top: 8px;
+    }
+
+    .verb-title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }
+
+    .verb-subtitle {
+        opacity: 0.9;
+        margin-bottom: 2px;
+    }
+
+    .verb-type {
+        font-size: 14px;
+        opacity: 0.75;
+    }
+
+    .conjugation-section {
+        margin: 16px;
+        background: #f9fafb;
+        border-radius: 12px;
+        padding: 16px;
+    }
+
+    .tense-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #374151;
+        margin-bottom: 12px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .conjugation-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+    }
+
+    .pronoun {
+        color: #6b7280;
+        font-weight: 500;
+        width: 80px;
+    }
+
+    .conjugation {
+        color: #111827;
+        font-weight: 600;
+        flex: 1;
+        text-align: right;
+    }
+
+    .bottom-nav {
+        border-top: 1px solid #e5e7eb;
+        background: white;
+        padding: 8px 16px;
+        display: flex;
+        justify-content: space-around;
+        flex-shrink: 0;
+    }
+
+    .nav-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #9ca3af;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .nav-btn.active {
+        color: #16a34a;
+    }
+
+    .nav-text {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+
+    .empty-state {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: #9ca3af;
+        text-align: center;
+        padding: 32px;
+    }
+
+    .empty-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+        opacity: 0.3;
+    }
+
+    .pwa-install-banner {
+        background: linear-gradient(135deg, #16a34a, #059669);
+        color: white;
+        padding: 12px 16px;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .pwa-install-banner.show {
+        display: block;
+    }
+
+    /* Safari PWA styling */
+    @supports (-webkit-touch-callout: none) {
+        .app-container {
+            height: 100vh;
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+    }
+
+    /* Hide elements for standalone mode */
+    @media (display-mode: standalone) {
+        .pwa-install-banner {
+            display: none !important;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="pwa-install-banner" id="installBanner">
+        📱 Installer l'app sur votre écran d'accueil
+    </div>
+
+```
+<div class="app-container" id="app">
+    <!-- L'application sera rendue ici -->
+</div>
+
+<script>
+    class ItalianConjugatorApp {
+        constructor() {
+            this.currentView = 'search';
+            this.searchTerm = '';
+            this.selectedVerb = null;
+            this.favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            
+            this.verbDatabase = {
+                'essere': {
+                    translation: 'être',
+                    group: 'irrégulier',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'sono',
+                            'tu': 'sei',
+                            'lui/lei': 'è',
+                            'noi': 'siamo',
+                            'voi': 'siete',
+                            'loro': 'sono'
+                        },
+                        'Imperfetto': {
+                            'io': 'ero',
+                            'tu': 'eri',
+                            'lui/lei': 'era',
+                            'noi': 'eravamo',
+                            'voi': 'eravate',
+                            'loro': 'erano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'sono stato/a',
+                            'tu': 'sei stato/a',
+                            'lui/lei': 'è stato/a',
+                            'noi': 'siamo stati/e',
+                            'voi': 'siete stati/e',
+                            'loro': 'sono stati/e'
+                        },
+                        'Futuro semplice': {
+                            'io': 'sarò',
+                            'tu': 'sarai',
+                            'lui/lei': 'sarà',
+                            'noi': 'saremo',
+                            'voi': 'sarete',
+                            'loro': 'saranno'
+                        }
+                    }
+                },
+                'avere': {
+                    translation: 'avoir',
+                    group: 'irrégulier',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'ho',
+                            'tu': 'hai',
+                            'lui/lei': 'ha',
+                            'noi': 'abbiamo',
+                            'voi': 'avete',
+                            'loro': 'hanno'
+                        },
+                        'Imperfetto': {
+                            'io': 'avevo',
+                            'tu': 'avevi',
+                            'lui/lei': 'aveva',
+                            'noi': 'avevamo',
+                            'voi': 'avevate',
+                            'loro': 'avevano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'ho avuto',
+                            'tu': 'hai avuto',
+                            'lui/lei': 'ha avuto',
+                            'noi': 'abbiamo avuto',
+                            'voi': 'avete avuto',
+                            'loro': 'hanno avuto'
+                        },
+                        'Futuro semplice': {
+                            'io': 'avrò',
+                            'tu': 'avrai',
+                            'lui/lei': 'avrà',
+                            'noi': 'avremo',
+                            'voi': 'avrete',
+                            'loro': 'avranno'
+                        }
+                    }
+                },
+                'fare': {
+                    translation: 'faire',
+                    group: 'irrégulier',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'faccio',
+                            'tu': 'fai',
+                            'lui/lei': 'fa',
+                            'noi': 'facciamo',
+                            'voi': 'fate',
+                            'loro': 'fanno'
+                        },
+                        'Imperfetto': {
+                            'io': 'facevo',
+                            'tu': 'facevi',
+                            'lui/lei': 'faceva',
+                            'noi': 'facevamo',
+                            'voi': 'facevate',
+                            'loro': 'facevano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'ho fatto',
+                            'tu': 'hai fatto',
+                            'lui/lei': 'ha fatto',
+                            'noi': 'abbiamo fatto',
+                            'voi': 'avete fatto',
+                            'loro': 'hanno fatto'
+                        },
+                        'Futuro semplice': {
+                            'io': 'farò',
+                            'tu': 'farai',
+                            'lui/lei': 'farà',
+                            'noi': 'faremo',
+                            'voi': 'farete',
+                            'loro': 'faranno'
+                        }
+                    }
+                },
+                'amare': {
+                    translation: 'aimer',
+                    group: '1er groupe (-are)',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'amo',
+                            'tu': 'ami',
+                            'lui/lei': 'ama',
+                            'noi': 'amiamo',
+                            'voi': 'amate',
+                            'loro': 'amano'
+                        },
+                        'Imperfetto': {
+                            'io': 'amavo',
+                            'tu': 'amavi',
+                            'lui/lei': 'amava',
+                            'noi': 'amavamo',
+                            'voi': 'amavate',
+                            'loro': 'amavano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'ho amato',
+                            'tu': 'hai amato',
+                            'lui/lei': 'ha amato',
+                            'noi': 'abbiamo amato',
+                            'voi': 'avete amato',
+                            'loro': 'hanno amato'
+                        },
+                        'Futuro semplice': {
+                            'io': 'amerò',
+                            'tu': 'amerai',
+                            'lui/lei': 'amerà',
+                            'noi': 'ameremo',
+                            'voi': 'amerete',
+                            'loro': 'ameranno'
+                        }
+                    }
+                },
+                'mangiare': {
+                    translation: 'manger',
+                    group: '1er groupe (-are)',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'mangio',
+                            'tu': 'mangi',
+                            'lui/lei': 'mangia',
+                            'noi': 'mangiamo',
+                            'voi': 'mangiate',
+                            'loro': 'mangiano'
+                        },
+                        'Imperfetto': {
+                            'io': 'mangiavo',
+                            'tu': 'mangiavi',
+                            'lui/lei': 'mangiava',
+                            'noi': 'mangiavamo',
+                            'voi': 'mangiavate',
+                            'loro': 'mangiavano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'ho mangiato',
+                            'tu': 'hai mangiato',
+                            'lui/lei': 'ha mangiato',
+                            'noi': 'abbiamo mangiato',
+                            'voi': 'avete mangiato',
+                            'loro': 'hanno mangiato'
+                        },
+                        'Futuro semplice': {
+                            'io': 'mangerò',
+                            'tu': 'mangerai',
+                            'lui/lei': 'mangerà',
+                            'noi': 'mangeremo',
+                            'voi': 'mangerete',
+                            'loro': 'mangeranno'
+                        }
+                    }
+                },
+                'credere': {
+                    translation: 'croire',
+                    group: '2ème groupe (-ere)',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'credo',
+                            'tu': 'credi',
+                            'lui/lei': 'crede',
+                            'noi': 'crediamo',
+                            'voi': 'credete',
+                            'loro': 'credono'
+                        },
+                        'Imperfetto': {
+                            'io': 'credevo',
+                            'tu': 'credevi',
+                            'lui/lei': 'credeva',
+                            'noi': 'credevamo',
+                            'voi': 'credevate',
+                            'loro': 'credevano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'ho creduto',
+                            'tu': 'hai creduto',
+                            'lui/lei': 'ha creduto',
+                            'noi': 'abbiamo creduto',
+                            'voi': 'avete creduto',
+                            'loro': 'hanno creduto'
+                        },
+                        'Futuro semplice': {
+                            'io': 'crederò',
+                            'tu': 'crederai',
+                            'lui/lei': 'crederà',
+                            'noi': 'crederemo',
+                            'voi': 'crederete',
+                            'loro': 'crederanno'
+                        }
+                    }
+                },
+                'dormire': {
+                    translation: 'dormir',
+                    group: '3ème groupe (-ire)',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'dormo',
+                            'tu': 'dormi',
+                            'lui/lei': 'dorme',
+                            'noi': 'dormiamo',
+                            'voi': 'dormite',
+                            'loro': 'dormono'
+                        },
+                        'Imperfetto': {
+                            'io': 'dormivo',
+                            'tu': 'dormivi',
+                            'lui/lei': 'dormiva',
+                            'noi': 'dormivamo',
+                            'voi': 'dormivate',
+                            'loro': 'dormivano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'ho dormito',
+                            'tu': 'hai dormito',
+                            'lui/lei': 'ha dormito',
+                            'noi': 'abbiamo dormito',
+                            'voi': 'avete dormito',
+                            'loro': 'hanno dormito'
+                        },
+                        'Futuro semplice': {
+                            'io': 'dormirò',
+                            'tu': 'dormirai',
+                            'lui/lei': 'dormirà',
+                            'noi': 'dormiremo',
+                            'voi': 'dormirete',
+                            'loro': 'dormiranno'
+                        }
+                    }
+                },
+                'finire': {
+                    translation: 'finir',
+                    group: '3ème groupe (-ire avec -isc-)',
+                    conjugations: {
+                        'Presente': {
+                            'io': 'finisco',
+                            'tu': 'finisci',
+                            'lui/lei': 'finisce',
+                            'noi': 'finiamo',
+                            'voi': 'finite',
+                            'loro': 'finiscono'
+                        },
+                        'Imperfetto': {
+                            'io': 'finivo',
+                            'tu': 'finivi',
+                            'lui/lei': 'finiva',
+                            'noi': 'finivamo',
+                            'voi': 'finivate',
+                            'loro': 'finivano'
+                        },
+                        'Passato prossimo': {
+                            'io': 'ho finito',
+                            'tu': 'hai finito',
+                            'lui/lei': 'ha finito',
+                            'noi': 'abbiamo finito',
+                            'voi': 'avete finito',
+                            'loro': 'hanno finito'
+                        },
+                        'Futuro semplice': {
+                            'io': 'finirò',
+                            'tu': 'finirai',
+                            'lui/lei': 'finirà',
+                            'noi': 'finiremo',
+                            'voi': 'finirete',
+                            'loro': 'finiranno'
+                        }
+                    }
+                }
+            };
+
+            this.init();
+        }
+
+        init() {
+            this.render();
+            this.setupPWA();
+        }
+
+        setupPWA() {
+            // Service Worker
+            if ('serviceWorker' in navigator) {
+                const swCode = `
+                    const CACHE_NAME = 'italian-conjugator-v1';
+                    const urlsToCache = ['/'];
+                    
+                    self.addEventListener('install', event => {
+                        event.waitUntil(
+                            caches.open(CACHE_NAME)
+                                .then(cache => cache.addAll(urlsToCache))
+                        );
+                    });
+                    
+                    self.addEventListener('fetch', event => {
+                        event.respondWith(
+                            caches.match(event.request)
+                                .then(response => response || fetch(event.request))
+                        );
+                    });
+                `;
+                
+                const blob = new Blob([swCode], { type: 'application/javascript' });
+                const swUrl = URL.createObjectURL(blob);
+                
+                navigator.serviceWorker.register(swUrl);
+            }
+
+            // PWA Install Banner
+            let deferredPrompt;
+            const installBanner = document.getElementById('installBanner');
+
+            window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                deferredPrompt = e;
+                installBanner.classList.add('show');
+            });
+
+            installBanner.addEventListener('click', async () => {
+                if (deferredPrompt) {
+                    deferredPrompt.prompt();
+                    const { outcome } = await deferredPrompt.userChoice;
+                    deferredPrompt = null;
+                    installBanner.classList.remove('show');
+                }
+            });
+        }
+
+        toggleFavorite(verb) {
+            if (this.favorites.includes(verb)) {
+                this.favorites = this.favorites.filter(fav => fav !== verb);
+            } else {
+                this.favorites.push(verb);
+            }
+            localStorage.setItem('favorites', JSON.stringify(this.favorites));
+            this.render();
+        }
+
+        selectVerb(verb) {
+            this.selectedVerb = verb;
+            this.currentView = 'conjugation';
+            this.render();
+        }
+
+        getFilteredVerbs() {
+            return Object.keys(this.verbDatabase).filter(verb =>
+                verb.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+                this.verbDatabase[verb].translation.toLowerCase().includes(this.searchTerm.toLowerCase())
+            );
+        }
+
+        render() {
+            const app = document.getElementById('app');
+            
+            if (this.currentView === 'search') {
+                app.innerHTML = this.renderSearchView();
+            } else if (this.currentView === 'conjugation') {
+                app.innerHTML = this.renderConjugationView();
+            } else if (this.currentView === 'favorites') {
+                app.innerHTML = this.renderFavoritesView();
+            }
+
+            this.attachEventListeners();
+        }
+
+        renderSearchView() {
+            const filteredVerbs = this.getFilteredVerbs();
+            
+            return `
+                <div class="header">
+                    <div class="header-top">
+                        <h1 class="header-title">Coniugazione Italiana</h1>
+                    </div>
+                    <div class="search-container">
+                        <div class="search-icon">🔍</div>
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            placeholder="Chercher un verbe (italien ou français)..."
+                            value="${this.searchTerm}"
+                            id="searchInput"
+                        />
+                    </div>
+                </div>
+                
+                <div class="content">
+                    ${filteredVerbs.map(verb => `
+                        <div class="verb-item" onclick="app.selectVerb('${verb}')">
+                            <div class="verb-info">
+                                <div class="verb-name">${verb}</div>
+                                <div class="verb-translation">${this.verbDatabase[verb].translation}</div>
+                                <div class="verb-group">${this.verbDatabase[verb].group}</div>
+                            </div>
+                            <div class="verb-actions">
+                                <button class="favorite-btn ${this.favorites.includes(verb) ? 'active' : ''}" 
+                                        onclick="event.stopPropagation(); app.toggleFavorite('${verb}')">
+                                    ⭐
+                                </button>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="bottom-nav">
+                    <button class="nav-btn active">
+                        🔍
+                        <span class="nav-text">Recherche</span>
+                    </button>
+                    <button class="nav-btn" onclick="app.currentView='favorites'; app.render()">
+                        ⭐
+                        <span class="nav-text">Favoris</span>
+                    </button>
+                </div>
+            `;
+        }
+
+        renderConjugationView() {
+            const verb = this.verbDatabase[this.selectedVerb];
+            
+            return `
+                <div class="header">
+                    <div class="header-top">
+                        <button class="back-btn" onclick="app.currentView='search'; app.render()">
+                            ← Retour
+                        </button>
+                        <button class="favorite-btn ${this.favorites.includes(this.selectedVerb) ? 'active' : ''}" 
+                                onclick="app.toggleFavorite('${this.selectedVerb}')">
+                            ⭐
+                        </button>
+                    </div>
+                    <div class="verb-header">
+                        <h1 class="verb-title">${this.selectedVerb}</h1>
+                        <p class="verb-subtitle">${verb.translation}</p>
+                        <p class="verb-type">${verb.group}</p>
+                    </div>
+                </div>
+                
+                <div class="content">
+                    ${Object.entries(verb.conjugations).map(([tense, conjugations]) => `
+                        <div class="conjugation-section">
+                            <h3 class="tense-title">${tense}</h3>
+                            ${Object.entries(conjugations).map(([pronoun, conjugation]) => `
+                                <div class="conjugation-item">
+                                    <span class="pronoun">${pronoun}</span>
+                                    <span class="conjugation">${conjugation}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        renderFavoritesView() {
+            return `
+                <div class="header">
+                    <div class="header-top">
+                        <h1 class="header-title">Mes Favoris</h1>
+                    </div>
+                </div>
+                
+                <div class="content">
+                    ${this.favorites.length === 0 ? `
+                        <div class="empty-state">
+                            <div class="empty-icon">⭐</div>
+                            <p>Aucun verbe favori</p>
+                            <p style="font-size: 12px; margin-top: 8px;">Ajoutez des verbes à vos favoris pour les retrouver ici</p>
+                        </div>
+                    ` : this.favorites.map(verb => `
+                        <div class="verb-item" onclick="app.selectVerb('${verb}')">
+                            <div class="verb-info">
+                                <div class="verb-name">${verb}</div>
+                                <div class="verb-translation">${this.verbDatabase[verb].translation}</div>
+                                <div class="verb-group">${this.verbDatabase[verb].group}</div>
+                            </div>
+                            <div class="verb-actions">
+                                <button class="favorite-btn active" 
+                                        onclick="event.stopPropagation(); app.toggleFavorite('${verb}')">
+                                    ⭐
+                                </button>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+                
+                <div class="bottom-nav">
+                    <button class="nav-btn" onclick="app.currentView='search'; app.render()">
+                        🔍
+                        <span class="nav-text">Recherche</span>
+                    </button>
+                    <button class="nav-btn active">
+                        ⭐
+                        <span class="nav-text">Favoris</span>
+                    </button>
+                </div>
+            `;
+        }
+
+        attachEventListeners() {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    this.searchTerm = e.target.value;
+                    this.render();
+                });
+            }
+        }
+    }
+
+    // Initialiser l'application
+    const app = new ItalianConjugatorApp();
+</script>
+```
+
+</body>
+</html>
